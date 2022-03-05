@@ -1,6 +1,6 @@
 extends ../layouts/master
 
-block title
+append title
   link(rel="stylesheet", href="assets/css/styles.min.css")
 
 block content
@@ -9,5 +9,5 @@ block content
   h1 Hello, world!
   p #2
 
-block scripts
+append scripts
   script(src="assets/scripts/main.min.js")

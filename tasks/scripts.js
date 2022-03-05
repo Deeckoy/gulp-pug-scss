@@ -10,8 +10,7 @@ module.exports = function script() {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(eslint())
-    .pipe(eslint.format())
     .pipe(concat('main.min.js'))
     .pipe(sourcemaps.write('/sourcemaps/'))
-    .pipe(dest('./dist/assets/scripts'));
+    .pipe(dest('./dist/assets/scripts'))
 };
